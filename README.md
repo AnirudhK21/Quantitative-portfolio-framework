@@ -1,97 +1,127 @@
 # Quantitative Portfolio Analytics and Risk Management Framework
 
-# Overview
+# Project Overview
+This project develops an end-to-end quantitative portfolio analytics and risk management framework using Python.
+The framework integrates portfolio construction, risk analytics, volatility modelling, regime detection, and portfolio optimization into a single research workflow.
+The analysis was conducted on a diversified portfolio consisting of:
 
-This project develops an end-to-end quantitative investment research framework using Python. The framework combines portfolio construction, risk analytics, volatility modelling, regime detection, and portfolio optimization to evaluate investment performance and risk across a diversified equity portfolio.
+Reliance Industries
+HDFC Bank
+Infosys
+Sun Pharma
+Larsen & Toubro
+ITC
+Bharti Airtel
+Bajaj Finance
 
- Key Features
+# Methodology
 
-# Portfolio Construction
-
-* Equal Weight Portfolio
-* Minimum Variance Portfolio
-* Risk Parity Portfolio
-* Maximum Sharpe Portfolio
+Portfolio Construction
+The following portfolio construction approaches were implemented and compared:
+Equal Weight Portfolio
+Minimum Variance Portfolio
+Risk Parity Portfolio
+Maximum Sharpe Portfolio
 
 # Risk Analytics
 
-* CAGR
-* Volatility
-* Sharpe Ratio
-* Sortino Ratio
-* Calmar Ratio
-* Maximum Drawdown
-* Value at Risk (VaR)
-* Conditional Value at Risk (CVaR)
+Performance and risk were evaluated using:
+CAGR
+Volatility
+Sharpe Ratio
+Sortino Ratio
+Calmar Ratio
+Maximum Drawdown
+Value at Risk (VaR)
+Conditional Value at Risk (CVaR)
 
 # Volatility Modelling
 
-* Rolling Volatility
-* Rolling Sharpe Ratio
-* GARCH(1,1) Conditional Volatility
-* Volatility Forecasting
+To study changing market risk over time:
+Rolling Volatility
+Rolling Sharpe Ratio
+GARCH(1,1) Conditional Volatility
+Volatility Forecasting
 
 # Regime Detection
 
-* Hidden Markov Model (HMM)
-* Market Regime Classification
-* Regime Statistics
+Market behaviour was analyzed using:
+Hidden Markov Models (HMM)
+Market Regime Classification
+Regime Statistics
 
 # Portfolio Optimization
 
-* Monte Carlo Portfolio Simulation
-* Efficient Frontier
-* Maximum Sharpe Portfolio Optimization
+Portfolio allocations were optimized using:
+Monte Carlo Portfolio Simulation
+Efficient Frontier Analysis
+Maximum Sharpe Portfolio Optimization
 
-# Results
+# Key Results
 
-| Metric           |   Value |
-| ---------------- | ------: |
-| CAGR             |  25.75% |
-| Volatility       |  21.53% |
-| Sharpe Ratio     |    1.17 |
-| Sortino Ratio    |    1.08 |
-| Maximum Drawdown | -42.01% |
+Metric
+Value
+CAGR
+25.75%
+Volatility
+21.53%
+Sharpe Ratio
+1.17
+Sortino Ratio
+1.08
+Calmar Ratio
+0.61
+Maximum Drawdown
+-42.01%
 
-# Efficient Frontier
+# Key Findings
 
-![Efficient Frontier](figures/efficient_frontier.png)
+Portfolio Construction Matters
+The Minimum Variance Portfolio significantly reduced portfolio volatility and drawdown compared to the Equal Weight Portfolio, demonstrating that allocation decisions alone can materially alter portfolio risk.
 
-# HMM Regime Detection
+# Volatility Is Not Constant
+Rolling volatility and GARCH analysis showed clear evidence of volatility clustering, indicating that periods of high volatility tend to persist rather than occur randomly.
 
-![HMM Regimes](figures/hmm_regimes.png)
+# Market Regimes Exist
+Hidden Markov Models identified three distinct market regimes, including a relatively rare stress regime. This suggests that market behaviour changes over time and cannot be treated as a single stationary process.
 
-# Rolling Volatility vs GARCH
+# Risk-Adjusted Optimization Alters Allocation
+The Maximum Sharpe Portfolio concentrated allocations toward assets that historically provided stronger risk-adjusted returns, highlighting the trade-off between diversification and optimization.
 
-![Volatility](figures/rolling_vs_garch.png)
+# Risk and Return Must Be Evaluated Together
+Portfolios with similar returns can exhibit substantially different volatility and drawdown characteristics. Risk-adjusted metrics provided a more complete evaluation than return alone.
 
-# Correlation Analysis
+# Visual Analytics
 
-![Correlation](figures/correlation_heatmap.png)
+Efficient Frontier
+�
+HMM Regime Detection
+�
+Rolling Volatility vs GARCH
+�
+Correlation Analysis
+�
+Portfolio Equity Curve
+�
+Monthly Returns Heatmap
+�
 
-# Portfolio Equity Curve
+# Technology Stack
+Python
+Pandas
+NumPy
+SciPy
+Matplotlib
+ARCH
+HMMlearn
+yFinance
+Jupyter Notebook
 
-![Equity Curve](figures/equity_curve.png)
-
-# Monthly Returns Heatmap
-
-![Monthly Returns](figures/monthly_returns_heatmap.png)
-
-# Technologies
-
-* Python
-* Pandas
-* NumPy
-* SciPy
-* Matplotlib
-* ARCH
-* HMMlearn
-* yFinance
-
-# Future Improvements
-
-* Interactive Dashboard
-* Multi-Asset Portfolio Support
-* Factor Models
-* Regime-Aware Portfolio Allocation
-* Live Market Data Integration
+# Future Research
+Potential extensions include:
+Regime-Aware Portfolio Allocation
+Factor Investing Strategies
+Dynamic Asset Allocation
+Multi-Asset Portfolio Construction
+Statistical Arbitrage Frameworks
+Live Market Data Integration
