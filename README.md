@@ -93,18 +93,29 @@ Portfolios with similar returns can exhibit substantially different volatility a
 
 # Visual Analytics
 
-Efficient Frontier
-�
-HMM Regime Detection
-�
-Rolling Volatility vs GARCH
-�
-Correlation Analysis
-�
-Portfolio Equity Curve
-�
-Monthly Returns Heatmap
-�
+# Efficient Frontier
+
+![Efficient Frontier](figures/efficient_frontier.png)
+
+# HMM Regime Detection
+
+![HMM Regimes](figures/hmm_regimes.png)
+
+# Rolling Volatility vs GARCH
+
+![Volatility](figures/rolling_vs_garch.png)
+
+# Correlation Analysis
+
+![Correlation](figures/correlation_heatmap.png)
+
+# Portfolio Equity Curve
+
+![Equity Curve](figures/equity_curve.png)
+
+# Monthly Returns Heatmap
+
+![Monthly Returns](figures/monthly_returns_heatmap.png)
 
 # Technology Stack
 Python
