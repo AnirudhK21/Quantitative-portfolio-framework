@@ -59,23 +59,15 @@ Maximum Sharpe Portfolio Optimization
 
 # Key Results
 
-Metric
-Value
-CAGR
-25.75%
-Volatility
-21.53%
-Sharpe Ratio
-1.17
-Sortino Ratio
-1.08
-Calmar Ratio
-0.61
-Maximum Drawdown
--42.01%
+Metric        Value
+CAGR          25.75%
+Volatility    21.53%
+Sharpe Ratio  1.17
+Sortino Ratio 1.08
+Calmar Ratio  0.61
+Maximum Drawdown -42.01%
 
 # Key Findings
-
 Portfolio Construction Matters
 The Minimum Variance Portfolio significantly reduced portfolio volatility and drawdown compared to the Equal Weight Portfolio, demonstrating that allocation decisions alone can materially alter portfolio risk.
 
